@@ -1,0 +1,19 @@
+name: Dev_Pull_Request
+on:
+  push:
+    branches:
+      - 'main'
+jobs:
+  CI_Steps:
+    runs-on: self-hosted
+    steps:
+
+      - name: Unit Tests
+        run: echo Unit Tests
+
+      - name: Integration Tests
+        run: echo Integration Tests
+
+      - name: Code Quality
+        run: echo Code Quality
+
